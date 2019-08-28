@@ -7,11 +7,20 @@ spring:
   data:
     solr:
       host: http://127.0.0.1:8983/solr
+  servlet:
+    multipart:
+      file-size-threshold: 5MB
+      max-request-size: 5MB
+      max-file-size: 5MB
 
 
+
+  mvc:
+    static-path-pattern=/static/**:
 
 mybatis:
   mapper-locations: classpath:mappers/*.xml
+
 
 
 
