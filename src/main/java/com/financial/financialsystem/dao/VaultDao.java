@@ -1,4 +1,4 @@
 package com.financial.financialsystem.dao;
 
-public interface VaultController {
+public interface VaultDao {
 }
