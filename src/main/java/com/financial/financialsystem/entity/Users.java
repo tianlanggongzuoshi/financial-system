@@ -16,6 +16,7 @@ import java.util.Date;
  * createDate '注册时间',
  * headimg '头像',
  * states '账号状态1正常，0封禁',
+ * capital 不可提现资金
  */
 
 public class Users {
@@ -36,7 +37,15 @@ public class Users {
     private Integer uid, cardstate, states;
     private String account, password, phone, headimg, nickName, email;
     private Date createDate;
-    private double balance;
+    private double balance,capital;
+
+    public double getCapital() {
+        return capital;
+    }
+
+    public void setCapital(double capital) {
+        this.capital = capital;
+    }
 
     public Integer getUid() {
         return uid;
